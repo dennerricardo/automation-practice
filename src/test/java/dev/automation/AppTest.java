@@ -12,9 +12,7 @@ public class AppTest {
 
     @Test
     public void helloSelenium() {
-        System.getProperty("webdriver.chrome.driver","C:/Windows/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
         driver.get("https://automationexercise.com/");
 
         String currentUrl = driver.getCurrentUrl();
